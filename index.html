@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mete Güleç | Kişisel Yazılar</title>
+  <meta name="description" content="Mete Güleç'in kişisel yazıları, şiirleri ve düşünceleri." />
+
+  <style>
+    :root {
+      --bg: #0f0f10;
+      --card: #18181b;
+      --text: #f4f4f5;
+      --muted: #a1a1aa;
+      --line: #27272a;
+      --accent: #d4af37;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: radial-gradient(circle at top, #1f1f23 0%, var(--bg) 45%);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: min(920px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 28px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.15rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: 0.2s;
+    }
+
+    .links a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding: 86px 0 60px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 0.92rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 5.8rem);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 690px;
+      font-size: clamp(1.08rem, 2vw, 1.35rem);
+      color: var(--muted);
+    }
+
+    .quote {
+      margin-top: 34px;
+      padding-left: 20px;
+      border-left: 2px solid var(--accent);
+      color: var(--text);
+      font-style: italic;
+    }
+
+    section {
+      padding: 46px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.015));
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px;
+      min-height: 190px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(212, 175, 55, 0.45);
+    }
+
+    .date {
+      color: var(--accent);
+      font-size: 0.82rem;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .card p,
+    .about p {
+      color: var(--muted);
+    }
+
+    .about {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 28px;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer {
+      padding: 36px 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        padding-top: 64px;
+      }
+
+      nav {
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="#">Mete Güleç</a>
+      <div class="links">
+        <a href="#yazilar">Yazılar</a>
+        <a href="#siirler">Şiirler</a>
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#iletisim">İletişim</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="eyebrow">Kişisel Yazılar & Şiirler</div>
+
+      <h1>Grinin içinden geçen cümleler.</h1>
+
+      <p>
+        Burada zamanın, insanın, suskunluğun ve içimde biriken cümlelerin izini tutuyorum.
+        Bazı yazılar kendini anlatır; bazıları ise insanı kendine anlatır.
+      </p>
+
+      <p class="quote">
+        “Zaman, hakikati en sessiz ama en keskin şekilde söyler.”
+      </p>
+    </section>
+
+    <section id="yazilar">
+      <div class="container">
+        <h2>Son Yazılar</h2>
+
+        <div class="grid">
+          <article class="card">
+            <div class="date">18 Mayıs 2026</div>
+            <h3>İlk Yazı</h3>
+            <p>
+              Buraya ilk kişisel yazının kısa girişini ekleyebilirsin.
+              Yazının tamamı için ileride ayrı sayfa açarız.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="date">Yakında</div>
+            <h3>İnsanın Grileşmesi</h3>
+            <p>
+              Kalabalığın içinde kendine yabancılaşan insan üzerine kısa bir deneme.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="date">Yakında</div>
+            <h3>Zaman Beni Haklı Çıkaracak</h3>
+            <p>
+              Susmanın, beklemenin ve zamana bırakmanın ağırlığına dair.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="siirler">
+      <div class="container">
+        <h2>Şiirler</h2>
+
+        <div class="grid">
+          <article class="card">
+            <div class="date">Defterden</div>
+            <h3>İsimsiz</h3>
+            <p>
+              Bir gün buraya kendi şiirinden birkaç dize ekleyeceğiz.
+              Site senin yazı arşivin gibi büyüyecek.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="date">Yakında</div>
+            <h3>Cüneyd Üzerine</h3>
+            <p>
+              Seslendirmek istediğin şiirler ve yorumların için özel bir bölüm açabiliriz.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="hakkimda">
+      <div class="container">
+        <h2>Hakkımda</h2>
+
+        <div class="about">
+          <p>
+            Ben Mete Güleç. Kişisel yazılarımı, şiirlerimi ve hayatın içinden
+            süzülen düşüncelerimi burada biriktiriyorum. Burası gösterişli bir
+            vitrin değil; daha çok zamanla derinleşen, sade ve bana ait bir alan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="iletisim">
+      <div class="container contact">
+        <h2>İletişim</h2>
+        <p>
+          Instagram:
+          <a href="https://instagram.com/mete_glc" target="_blank" rel="noopener">
+            @mete_glc
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Mete Güleç. Tüm yazılar kişiseldir.
+    </div>
+  </footer>
+</body>
+</html>
